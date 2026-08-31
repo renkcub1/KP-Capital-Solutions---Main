@@ -14,7 +14,7 @@ export default function About(){
     <section className="about-founder">
       <div className="container founder-grid">
         <div className="founder-photo-wrap">
-          <img src="/assets/images/ken-bg.png" alt="Kenneth Buckner, Founder and Capital Advisor" className="founder-photo" />
+          <img src="/assets/images/Ken.png" alt="Kenneth Buckner, Founder and Capital Advisor" className="founder-photo" />
         </div>
         <div className="founder-copy">
           <p className="section-kicker">FOUNDER</p>

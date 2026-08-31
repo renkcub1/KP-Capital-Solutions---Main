@@ -1,0 +1,52 @@
+@media (max-width: 620px){
+  .site-header,.nav-wrap{height:68px}
+  .brand{width:168px;height:52px}
+  .brand img{width:198px}
+  .menu-button{padding:6px}
+  .menu-button svg{width:25px;height:25px}
+  .mobile-menu{inset:68px 0 0}
+
+  .hero{
+    min-height:calc(100svh - 68px);
+    padding:54px 0 46px;
+    align-items:center;
+    background-image:linear-gradient(90deg,rgba(11,19,43,.97) 0%,rgba(11,19,43,.94) 44%,rgba(11,19,43,.82) 68%,rgba(11,19,43,.62) 100%),url('/assets/images/hero-executive.png');
+    background-position:66% center;
+  }
+  .hero-copy{padding-top:12px}
+  .hero h1{font-size:clamp(36px,10.2vw,44px);line-height:1.05;margin:12px 0 17px;letter-spacing:-.035em}
+  .hero-text{font-size:14.5px;line-height:1.58}
+  .hero .actions{margin-top:24px}
+  .hero .btn{min-height:50px}
+
+  .path-section,.strategy-section,.loan-section,.assessment-section,.loc-section,.final-cta{padding:56px 0}
+  .path-section h2,.strategy-section h2,.loan-section h2,.assessment-section h2,.loc-section h2,.final-cta h2{font-size:clamp(28px,8vw,35px);line-height:1.12}
+
+  .program-card,.loan-card{padding:26px 24px 25px}
+  .program-card h3{font-size:20px}
+  .loan-card h3{font-size:18px}
+
+  .assessment-copy .btn{min-height:50px}
+  .steps-card{padding:6px 18px}
+  .step{grid-template-columns:38px 1fr;gap:10px;padding:17px 0}
+  .step>span{font-size:12px}
+  .step h3{font-size:17px;margin-bottom:5px}
+  .step p{font-size:13px;line-height:1.5}
+
+  .leverage-box{padding:30px 24px}
+  .leverage-box strong{font-size:23px;line-height:1.3}
+  .final-cta>div>p:not(.section-kicker){font-size:14.5px;line-height:1.65}
+  .final-cta .btn{min-height:50px}
+}
+
+@media (max-width: 390px){
+  .container{width:calc(100% - 28px)}
+  .brand{width:158px}
+  .brand img{width:188px}
+  .hero{padding:48px 0 42px;background-position:68% center}
+  .hero h1{font-size:36px}
+  .hero-text{font-size:14px}
+  .eyebrow,.section-kicker{letter-spacing:.17em}
+  .path-section,.strategy-section,.loan-section,.assessment-section,.loc-section,.final-cta{padding:52px 0}
+  .path-section h2,.strategy-section h2,.loan-section h2,.assessment-section h2,.loc-section h2,.final-cta h2{font-size:30px}
+}

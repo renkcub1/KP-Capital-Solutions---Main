@@ -1,5 +1,6 @@
 import { ArrowRight, Check } from "lucide-react";
 import { Link } from "react-router-dom";
+import "./about.css";
 
 export default function About(){
   return <main className="about-page">

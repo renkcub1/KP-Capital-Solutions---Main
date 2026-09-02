@@ -1,0 +1,33 @@
+import { ArrowRight, BadgeDollarSign, ChartNoAxesCombined, Check, Landmark, LineChart, Search, ShieldCheck, Target } from "lucide-react";
+import { Link } from "react-router-dom";
+import "./capital-strategy.css";
+
+const paths=[
+  {icon:BadgeDollarSign,num:"01",title:"Ready to Fund",text:"You have an opportunity and the financial position to pursue financing now. We help identify capital aligned with the purpose, timing and transaction."},
+  {icon:ShieldCheck,num:"02",title:"Strengthen Your Position",text:"The right financing is not available today. We identify factors affecting fundability and build a clearer path toward stronger borrowing capacity."},
+  {icon:LineChart,num:"03",title:"Optimize Your Capital",text:"You already have access to capital. We look for ways to improve flexibility, preserve liquidity and use each source of capital more strategically."}
+];
+
+const process=[
+  ["01","Assess","Understand your current financial position, capital need, timing and available options."],
+  ["02","Strengthen","Address factors that may be limiting fundability, liquidity or borrowing capacity."],
+  ["03","Strategize","Match the right source of capital to the right business, property or investment purpose."],
+  ["04","Fund","Pursue financing aligned with your qualifications, opportunity and broader objectives."],
+  ["05","Grow","Build greater flexibility, reusable liquidity and leverage for the opportunities ahead."]
+];
+
+export default function CapitalStrategy(){return <main className="cs-page">
+  <section className="cs-hero"><div className="container cs-hero-grid"><div><p className="section-kicker light">CAPITAL STRATEGY</p><h1>Know Your Position.<br/>Build Better Access to Capital.</h1><p>Funding is the objective when the opportunity and qualifications align. When they do not, KP Capital Solutions helps identify what may be limiting your options and what can be strengthened. And when you already have access to capital, we help you think more strategically about how to use it.</p><div className="actions"><Link className="btn btn-gold" to="/contact">Start Your Assessment <ArrowRight size={18}/></Link><Link className="btn btn-outline" to="/loan-programs">Explore Loan Programs</Link></div></div><div className="cs-hero-card"><ChartNoAxesCombined/><span>THE OBJECTIVE</span><strong>Use the right capital<br/>for the right purpose.</strong><p>Capital strategy is not about adding debt. It is about understanding your position and creating better options.</p></div></div></section>
+
+  <section className="cs-position"><div className="container"><div className="cs-heading"><p className="section-kicker">START WHERE YOU ARE</p><h2>Three Positions. One Clear Objective.</h2><p>Every client does not need the same next step. The strategy begins by identifying where you are today.</p></div><div className="cs-path-grid">{paths.map(({icon:Icon,num,title,text})=><article key={num}><div className="cs-path-top"><span>{num}</span><Icon/></div><h3>{title}</h3><p>{text}</p></article>)}</div></div></section>
+
+  <section className="cs-assessment"><div className="container cs-assessment-grid"><div><p className="section-kicker light">FINANCIAL PROFILE ASSESSMENT</p><h2>When the Answer Is Not Yet, Understand Why.</h2><p>A financing decline or limited approval does not always mean the opportunity ends. It may mean the financial profile, liquidity, credit structure, documentation or timing needs attention first.</p><p>Our assessment is designed to identify the factors shaping your current borrowing position and establish a practical path forward.</p><ul><li><Check/>Review financial and credit position</li><li><Check/>Identify potential funding obstacles</li><li><Check/>Evaluate liquidity and borrowing readiness</li><li><Check/>Prioritize steps that can improve fundability</li></ul></div><div className="cs-assessment-card"><Search/><span>WHAT WE ARE LOOKING FOR</span><h3>A clearer picture of what lenders see.</h3><p>The goal is to understand the profile before repeatedly applying for capital. That allows us to focus on changes that may create stronger financing options.</p><Link to="/contact">Start With an Assessment <ArrowRight size={17}/></Link></div></div></section>
+
+  <section className="cs-process"><div className="container"><div className="cs-heading"><p className="section-kicker">THE CAPITAL PATH</p><h2>Assess. Strengthen. Strategize. Fund. Grow.</h2><p>A disciplined process keeps the focus on both the opportunity in front of you and the financial position you are building over time.</p></div><div className="cs-process-grid">{process.map(([num,title,text])=><article key={num}><span>{num}</span><h3>{title}</h3><p>{text}</p></article>)}</div></div></section>
+
+  <section className="cs-leverage"><div className="container cs-leverage-grid"><div><p className="section-kicker light">BUILD GREATER LEVERAGE</p><h2>Flexible Capital Can Change How You Approach Opportunity.</h2><p>Transaction-specific financing such as bridge, hard money, DSCR and construction loans can be exactly the right tools for a deal. The strategy is knowing when to use them—and when flexible business capital can complement them.</p><p>For qualified established businesses, a business line of credit can create reusable liquidity for deposits, operating needs, project costs and opportunities that do not require a separate loan every time.</p></div><div className="cs-leverage-card"><Landmark/><span>LINE OF CREDIT STRATEGY</span><strong>Preserve liquidity.<br/>Create flexibility.<br/>Keep capital available.</strong><p>Use revolving capital where it creates leverage while reserving transaction-specific financing for the purpose it serves best.</p></div></div></section>
+
+  <section className="cs-principle"><div className="container"><Target/><p className="section-kicker">THE PRINCIPLE</p><h2>More Capital Is Not Always the Answer.<br/>Better Capital Access Is.</h2><p>The objective is a stronger financial position, better financing choices and the ability to act when the right opportunity appears.</p></div></section>
+
+  <section className="final-cta cs-cta"><div className="container"><p className="section-kicker light">KNOW YOUR NEXT MOVE</p><h2>Start With Your Current Position.</h2><p>Whether you are ready to fund today, need to strengthen your profile or want to use existing capital more strategically, we can help determine the next step.</p><div className="actions centered"><Link className="btn btn-gold" to="/contact">Start Your Assessment <ArrowRight size={18}/></Link><Link className="btn btn-outline" to="/loan-programs">Explore Loan Programs</Link></div></div></section>
+</main>}

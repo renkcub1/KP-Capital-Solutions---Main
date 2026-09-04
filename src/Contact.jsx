@@ -1,3 +1,4 @@
+import { useState } from "react";
 import {
   ArrowRight,
   Building2,
@@ -9,6 +10,42 @@ import {
 import "./contact.css";
 
 export default function Contact() {
+  const [status, setStatus] = useState("");
+  const [submitting, setSubmitting] = useState(false);
+
+  async function handleSubmit(event) {
+    event.preventDefault();
+
+    const form = event.currentTarget;
+    const formData = new FormData(form);
+
+    setSubmitting(true);
+    setStatus("");
+
+    try {
+      const response = await fetch("/contact-submit.php", {
+        method: "POST",
+        body: formData
+      });
+
+      const data = await response.json();
+
+      if (!response.ok || !data.success) {
+        throw new Error(data.message || "Unable to submit your request.");
+      }
+
+      setStatus("Thank you. Your request has been submitted.");
+      form.reset();
+    } catch (error) {
+      setStatus(
+        error.message ||
+          "We could not submit your request. Please try again."
+      );
+    } finally {
+      setSubmitting(false);
+    }
+  }
+
   return (
     <main className="contact-page">
       <section className="contact-hero">
@@ -34,7 +71,7 @@ export default function Contact() {
               most appropriate next step.
             </p>
 
-            <form className="contact-form">
+            <form className="contact-form" onSubmit={handleSubmit}>
               <div className="contact-form-row">
                 <label>
                   <span>Name *</span>
@@ -82,9 +119,20 @@ export default function Contact() {
                 />
               </label>
 
-              <button className="btn btn-navy contact-submit" type="submit">
-                Submit Request <ArrowRight size={18} />
+              <button
+                className="btn btn-navy contact-submit"
+                type="submit"
+                disabled={submitting}
+              >
+                {submitting ? "Submitting..." : "Submit Request"}
+                {!submitting && <ArrowRight size={18} />}
               </button>
+
+              {status && (
+                <p className="contact-form-status" role="status">
+                  {status}
+                </p>
+              )}
 
               <p className="contact-form-note">
                 By submitting this form, you agree that KP Capital Solutions may

@@ -18,6 +18,24 @@
 
   <body>
     <div id="root"></div>
+
+    <!-- Visitor Tracking -->
+    <script
+      async
+      src="https://app.visitortracking.com/assets/js/tracer.js"
+      onload="init_tracer()"
+    ></script>
+
+    <script>
+      function init_tracer() {
+        var tracer = new Tracer({
+          websiteId: 'cd8bdb28-da2b-4913-aa12-102ca99965eb',
+          async: true,
+          debug: false
+        });
+      }
+    </script>
+
     <script type="module" src="/src/main.jsx"></script>
   </body>
 </html>

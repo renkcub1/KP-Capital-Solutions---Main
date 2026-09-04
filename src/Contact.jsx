@@ -193,7 +193,7 @@ export default function Contact() {
               </ul>
               <a
                 className="contact-assessment-link"
-                href="https://kpcapitalfunding.com/#/free-calculator"
+                href="https://kpcapitalfunding.com/#/free-calculator" target="_blank" rel="noopener noreferrer"
               >
                 Start Your Assessment <ArrowRight size={17} />
               </a>

@@ -366,7 +366,7 @@ export default function CapitalStrategy() {
           <div className="actions centered">
             <a
               className="btn btn-gold"
-              href="https://kpcapitalfunding.com/#/free-calculator"
+              href="https://kpcapitalfunding.com/#/free-calculator" target="_blank" rel="noopener noreferrer"
             >
               Start Your Assessment <ArrowRight size={18} />
             </a>

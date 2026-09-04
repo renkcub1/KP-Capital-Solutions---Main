@@ -138,7 +138,7 @@ export default function Blog() {
           <p>Explore financing for a current opportunity or learn how KP Capital Solutions can help you build stronger access to business capital.</p>
           <div className="actions centered">
             <Link className="btn btn-gold" to="/loan-programs">Explore Loan Programs <ArrowRight size={18} /></Link>
-            <a className="btn btn-outline" href="https://kpcapitalfunding.com/#/free-calculator">Start Your Assessment</a>
+            <a className="btn btn-outline" href="https://kpcapitalfunding.com/#/free-calculator" target="_blank" rel="noopener noreferrer">Start Your Assessment</a>
           </div>
         </div>
       </section>

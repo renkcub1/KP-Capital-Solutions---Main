@@ -19,32 +19,32 @@ const insights = [
   },
   {
     icon: Building2,
-    category: "REAL ESTATE CAPITAL",
+    category: "REAL ESTATE CAPITAL", href: "/blog/dscr-vs-hard-money",
     title: "DSCR vs. Hard Money: Choosing the Right Capital for the Deal",
     text: "Both can be valuable financing tools. The important question is when each structure makes sense for the property, business plan, timeline and exit strategy."
   },
   {
     icon: ChartNoAxesCombined,
-    category: "FUNDING READINESS",
+    category: "FUNDING READINESS", href: "/blog/getting-declined-for-financing",
     title: "Getting Declined for Financing Doesn't Always Mean the Deal Is Over",
     text: "Credit, liquidity, documentation and other financial factors can affect fundability. Understanding what lenders see can help identify what needs to be strengthened."
   },
   {
     icon: BadgeDollarSign,
     category: "CAPITAL STRATEGY",
-    title: "When a Business Line of Credit Makes More Sense Than Another Loan",
+    title: "When a Business Line of Credit Makes More Sense Than Another Loan", href: "/blog/business-line-of-credit-vs-loan",
     text: "Not every capital need requires a separate term loan. Revolving business capital can provide reusable liquidity for certain operating, project and opportunity costs."
   },
   {
     icon: LineChart,
     category: "CAPITAL STRATEGY",
-    title: "The Difference Between Having Capital and Having a Capital Strategy",
+    title: "The Difference Between Having Capital and Having a Capital Strategy", href: "/blog/having-capital-vs-capital-strategy",
     text: "Access to financing is valuable. Knowing which source to use, when to use it and how it affects liquidity can create significantly greater financial flexibility."
   },
   {
     icon: BriefcaseBusiness,
     category: "BUSINESS CAPITAL",
-    title: "What Lenders Look for in an Established Business",
+    title: "What Lenders Look for in an Established Business", href: "/blog/what-lenders-look-for",
     text: "Revenue, operating history, credit, cash flow and documentation can all influence financing options. Knowing how lenders evaluate the business helps you prepare."
   }
 ];
@@ -100,7 +100,7 @@ export default function Blog() {
           </div>
 
           <div className="blog-grid">
-            {insights.slice(1).map(({ icon: Icon, category, title, text }) => (
+            {insights.slice(1).map(({ icon: Icon, category, title, text, href }) => (
               <article className="blog-card" key={title}>
                 <div className="blog-card-top">
                   <Icon />
@@ -108,7 +108,7 @@ export default function Blog() {
                 </div>
                 <h3>{title}</h3>
                 <p>{text}</p>
-                <span className="blog-card-link">Full Insight Coming Soon</span>
+                {href ? <Link className="blog-card-link blog-read-link" to={href}>Read Full Insight <ArrowRight size={17} aria-hidden="true" /></Link> : <span className="blog-card-link">Full Insight Coming Soon</span>}
               </article>
             ))}
           </div>

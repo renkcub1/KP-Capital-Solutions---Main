@@ -6,6 +6,11 @@ import CapitalStrategy from "./CapitalStrategy";
 import FinancialProfileImprovement from "./FinancialProfileImprovement";
 import Blog from "./Blog";
 import BusinessCapitalArticle from "./BusinessCapitalArticle";
+import LenderReadinessArticle from "./LenderReadinessArticle";
+import CapitalStrategyArticle from "./CapitalStrategyArticle";
+import LineOfCreditArticle from "./LineOfCreditArticle";
+import FundingReadinessArticle from "./FundingReadinessArticle";
+import RealEstateCapitalArticle from "./RealEstateCapitalArticle";
 import Contact from "./Contact";
 import PrivacyPolicy from "./PrivacyPolicy";
 import Terms from "./Terms";
@@ -47,6 +52,6 @@ function ScrollToHash() {
   return null;
 }
 
-function App(){return <><ScrollToHash/><Navbar/><Routes><Route path="/" element={<Home/>}/><Route path="/about" element={<About/>}/><Route path="/loan-programs" element={<LoanPrograms/>}/><Route path="/capital-strategy" element={<CapitalStrategy/>}/><Route path="/financial-profile-improvement" element={<FinancialProfileImprovement/>}/><Route path="/blog" element={<Blog/>}/><Route path="/blog/reusable-access-to-capital" element={<BusinessCapitalArticle/>}/><Route path="/contact" element={<Contact/>}/><Route path="/privacy-policy" element={<PrivacyPolicy/>}/><Route path="/terms" element={<Terms/>}/></Routes><Footer/></>}
+function App(){return <><ScrollToHash/><Navbar/><Routes><Route path="/" element={<Home/>}/><Route path="/about" element={<About/>}/><Route path="/loan-programs" element={<LoanPrograms/>}/><Route path="/capital-strategy" element={<CapitalStrategy/>}/><Route path="/financial-profile-improvement" element={<FinancialProfileImprovement/>}/><Route path="/blog" element={<Blog/>}/><Route path="/blog/reusable-access-to-capital" element={<BusinessCapitalArticle/>}/><Route path="/blog/what-lenders-look-for" element={<LenderReadinessArticle/>}/><Route path="/blog/having-capital-vs-capital-strategy" element={<CapitalStrategyArticle/>}/><Route path="/blog/business-line-of-credit-vs-loan" element={<LineOfCreditArticle/>}/><Route path="/blog/getting-declined-for-financing" element={<FundingReadinessArticle/>}/><Route path="/blog/dscr-vs-hard-money" element={<RealEstateCapitalArticle/>}/><Route path="/contact" element={<Contact/>}/><Route path="/privacy-policy" element={<PrivacyPolicy/>}/><Route path="/terms" element={<Terms/>}/></Routes><Footer/></>}
 
 export default App;

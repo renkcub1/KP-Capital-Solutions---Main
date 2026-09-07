@@ -83,7 +83,7 @@ export default function Blog() {
               <p className="blog-category">{featured.category}</p>
               <h2>{featured.title}</h2>
               <p>{featured.text}</p>
-              <span className="blog-coming">Full Insight Coming Soon</span>
+              <Link className="blog-read-link" to="/blog/reusable-access-to-capital">Read Full Insight <ArrowRight size={17} aria-hidden="true" /></Link>
             </div>
           </article>
         </div>

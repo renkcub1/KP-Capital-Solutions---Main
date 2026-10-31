@@ -5,14 +5,14 @@
     ".claude/hooks/vexp-restore.sh": "f0af4cf773a92e22998375c105d1034920c6530d2651ea9c6badcad01391fb3c",
     ".claude/hooks/vexp-subagent.sh": "59a171ca122ec095ef7559fc411f8a6fedea9ef8e6931684307c5771d3539e1e",
     "deploy.ps1": "b350bece4ddb15c1e96fef10714bd08cb96c1b6a56206cfb654e52c5487a43f8",
-    "public/contact-submit.php": "9eb82f0125f28afba2c2a364f0b081fb49e81596a1ad46cbf4911284d27b2e37",
+    "public/contact-submit.php": "6e94edcce9040e0a8c0dee7f4bec4ceb3eadf70db71da0379b3106603424371e",
     "src/About.jsx": "335602fea4820e5f778f96b3636f080d35648beb273fd137e0d57d712971a39a",
     "src/App.jsx": "b5e48d90f2cf9d6ba36f5b285e19d5993658d54cc7f167c96a02b2f475a43b98",
     "src/Blog.jsx": "b29ed6bfdf690612d662a35f888d4d5398e4bd7d238016fdc6fe2657c6a281be",
     "src/BusinessCapitalArticle.jsx": "7246008850959cdec64666ad5be849e59194fad178f584bbc8bd14f5a80bd7e3",
     "src/CapitalStrategy.jsx": "6b8a48429c98877c20a87f2a23b3bed1d13c2c72b9876bf7d1bdc41c860fd276",
     "src/CapitalStrategyArticle.jsx": "6f9fcfe3aa0377c971e086a83d2017f17cb023c49286f01e07906cf94569255f",
-    "src/Contact.jsx": "8952f5ccc55be62055da99362499e456d9433c9f185f45de079e261fa19735df",
+    "src/Contact.jsx": "03c095ac45b477712a8ee33963d93016f9f9c16050dc4aef704ce66c5d51011a",
     "src/FinancialProfileImprovement.jsx": "309cc5e978c0fd3a8236ea726ac688052fb93453a854225d15064caa537a0285",
     "src/FundingReadinessArticle.jsx": "dc2f4e79c1d9981db96fa03f19317d049547c405e1d0e750f17da72b682ce573",
     "src/LenderReadinessArticle.jsx": "0c303a0f0044ca3e5a131ec6d015c0faa3ebb651e4833ec565f0b634405ebc1d",
@@ -31,7 +31,7 @@
     "src/styles.css": "dc9353a1aacf9d6defdf5873709551a1b52ac5616f965f69221f28fe5ec56658"
   },
   "indexed_at_commit": "622d0f64f068cbc79ec495340247ace3ce658e4c",
-  "indexed_at_timestamp": "2026-10-31T02:05:19.335016900+00:00",
+  "indexed_at_timestamp": "2026-10-31T03:03:23.460614200+00:00",
   "languages": {
     "css": {
       "calls": 0,
@@ -46,16 +46,15 @@
       "nodes": 4
     },
     "php": {
-      "calls": 0,
-      "nodes": 1
+      "calls": 1,
+      "nodes": 2
     }
   },
-  "parser_version": "3.3.2",
   "schema_version": 3,
   "stats": {
     "total_edges": 692,
     "total_files": 29,
-    "total_nodes": 258
+    "total_nodes": 259
   },
-  "vexp_version": "3.3.8"
+  "vexp_version": "3.1.3"
 }

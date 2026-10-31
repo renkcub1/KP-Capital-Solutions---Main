@@ -1,0 +1,61 @@
+{
+  "file_hashes": {
+    ".claude/CLAUDE.md": "47f5062be3e82741ce457571940e1ceea33d1abf93ec8cc06db39bc557bfc7e8",
+    ".claude/hooks/vexp-hint.sh": "a5d2503f1ced0419f0459854a491eaf803f4946640182d609fd35427196d32c1",
+    ".claude/hooks/vexp-restore.sh": "f0af4cf773a92e22998375c105d1034920c6530d2651ea9c6badcad01391fb3c",
+    ".claude/hooks/vexp-subagent.sh": "59a171ca122ec095ef7559fc411f8a6fedea9ef8e6931684307c5771d3539e1e",
+    "deploy.ps1": "b350bece4ddb15c1e96fef10714bd08cb96c1b6a56206cfb654e52c5487a43f8",
+    "public/contact-submit.php": "9eb82f0125f28afba2c2a364f0b081fb49e81596a1ad46cbf4911284d27b2e37",
+    "src/About.jsx": "335602fea4820e5f778f96b3636f080d35648beb273fd137e0d57d712971a39a",
+    "src/App.jsx": "b5e48d90f2cf9d6ba36f5b285e19d5993658d54cc7f167c96a02b2f475a43b98",
+    "src/Blog.jsx": "b29ed6bfdf690612d662a35f888d4d5398e4bd7d238016fdc6fe2657c6a281be",
+    "src/BusinessCapitalArticle.jsx": "7246008850959cdec64666ad5be849e59194fad178f584bbc8bd14f5a80bd7e3",
+    "src/CapitalStrategy.jsx": "6b8a48429c98877c20a87f2a23b3bed1d13c2c72b9876bf7d1bdc41c860fd276",
+    "src/CapitalStrategyArticle.jsx": "6f9fcfe3aa0377c971e086a83d2017f17cb023c49286f01e07906cf94569255f",
+    "src/Contact.jsx": "8952f5ccc55be62055da99362499e456d9433c9f185f45de079e261fa19735df",
+    "src/FinancialProfileImprovement.jsx": "309cc5e978c0fd3a8236ea726ac688052fb93453a854225d15064caa537a0285",
+    "src/FundingReadinessArticle.jsx": "dc2f4e79c1d9981db96fa03f19317d049547c405e1d0e750f17da72b682ce573",
+    "src/LenderReadinessArticle.jsx": "0c303a0f0044ca3e5a131ec6d015c0faa3ebb651e4833ec565f0b634405ebc1d",
+    "src/LineOfCreditArticle.jsx": "033a4f6ba6dac41ed48887b7dc92887c8c535c7bcde825e9b33560736d768c0f",
+    "src/PrivacyPolicy.jsx": "8340f8d122ed4d3e87af3eb30e4c44188982450ac5cf32185ec4519ac4e1faa8",
+    "src/RealEstateCapitalArticle.jsx": "3646248ccc697fc26bd687cf91bc934dc44e083c300a85f0a79a2ce9820d260c",
+    "src/Terms.jsx": "46ba7e669c7e8a4ccf1054d40641b218fd9ecf99794fd958a2a1cab3a4c70d23",
+    "src/about.css": "5cb53c6df3c09b45869b494ee1978f26d39d3fc5dceb31a98d577089fbc4bdb0",
+    "src/blog.css": "450a9bedfdcc810ea144466d70d7c5e27b57a86c2b4ec3877a92a7840e3d12c3",
+    "src/capital-strategy.css": "6aa80ec24e8af95216d14e1b9060e8858a90e0e23ff2a2578e008ac5b2f1843f",
+    "src/contact.css": "841d44e5f3c02f7380278302f9faa0236458f4a993d5e2c27d96ce8d697c32f9",
+    "src/financial-profile-improvement.css": "22806fdc21bb9d27e6f83065b62fca2ead868fac57d7c9b745efb5ccc32ccfb0",
+    "src/index.css": "b49bece883308ecae11f137f7150eb00b06d7b7a996e4d96207db8bb7cd92fff",
+    "src/main.jsx": "f4c63c73a1a70c0e406a26bd7490cb6dd8cf4183dd5c9ce7ef743e585229b1af",
+    "src/mobile.css": "5d37946bea5460cb39a1aa089f1faf8422098b58ed874c98aa490ca810474ca5",
+    "src/styles.css": "dc9353a1aacf9d6defdf5873709551a1b52ac5616f965f69221f28fe5ec56658"
+  },
+  "indexed_at_commit": "622d0f64f068cbc79ec495340247ace3ce658e4c",
+  "indexed_at_timestamp": "2026-10-31T02:05:19.335016900+00:00",
+  "languages": {
+    "css": {
+      "calls": 0,
+      "nodes": 232
+    },
+    "javascript": {
+      "calls": 0,
+      "nodes": 21
+    },
+    "markdown": {
+      "calls": 0,
+      "nodes": 4
+    },
+    "php": {
+      "calls": 0,
+      "nodes": 1
+    }
+  },
+  "parser_version": "3.3.2",
+  "schema_version": 3,
+  "stats": {
+    "total_edges": 692,
+    "total_files": 29,
+    "total_nodes": 258
+  },
+  "vexp_version": "3.3.8"
+}

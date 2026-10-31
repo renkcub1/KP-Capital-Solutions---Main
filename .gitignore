@@ -1,5 +1,17 @@
+
+# Dependencies
 node_modules/
+
+# Vite build output
 dist/
+
+# VS Code settings
 .vscode/
 
+# Environment variables
+.env
+.env.local
+.env.*.local
+
+# Old website images
 public/assets/images/Ken.old
